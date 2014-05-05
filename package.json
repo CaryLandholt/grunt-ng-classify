@@ -1,0 +1,30 @@
+{
+	"name": "grunt-ng-classify",
+	"version": "0.0.0",
+	"description": "Compile CoffeeScript classes to AngularJS modules",
+	"author": {
+		"name": "Cary Landholt",
+		"email": "cary@landholt.com",
+		"url": "https://github.com/CaryLandholt"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/CaryLandholt/grunt-ng-classify"
+	},
+	"keywords": [
+		"gruntplugin",
+		"grunt.js",
+		"gruntjs",
+		"grunt",
+		"ng-classify"
+	],
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"dependencies": {
+		"ng-classify": "~1.0.0"
+	},
+	"devDependencies": {
+		"grunt": "~0.4.4"
+	}
+}
