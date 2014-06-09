@@ -1,4 +1,4 @@
-// This file is a bridget between JavaScript and CoffeeScript
+// This file is a bridge between JavaScript and CoffeeScript
 
 require('coffee-script').register();
 
