@@ -13,22 +13,30 @@
 	},
 	"keywords": [
 		"gruntplugin",
-		"grunt.js",
-		"gruntjs",
-		"grunt",
-		"ng-classify"
+		"angular",
+		"angularjs",
+		"class",
+		"coffeescript",
+		"module"
 	],
 	"engines": {
 		"node": ">=0.10.0"
 	},
 	"dependencies": {
-		"ng-classify": "~1.0.1"
+		"coffee-script": "~1.7.1",
+		"ng-classify": "~2.0.3"
 	},
 	"devDependencies": {
-		"coffee-script": "~1.7.1",
-		"conventional-changelog": "~0.0.9",
+		"conventional-changelog": "~0.0.11",
 		"grunt": "~0.4.5",
-		"gulp": "~3.6.2",
-		"gulp-util": "~2.2.14"
-	}
+		"gulp": "~3.8.0",
+		"gulp-util": "~2.2.17"
+	},
+	"files": [
+		"tasks",
+		"CHANGELOG.md",
+		"CONTRIBUTING.md",
+		"LICENSE",
+		"README.md"
+	]
 }

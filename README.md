@@ -1,25 +1,20 @@
-# [grunt](http://gruntjs.com/)-ng-classify [![Version][version-image]][version-url] [![Build Status][build-image]][build-url] [![Dependency Status][dependencies-image]][dependencies-url] [![License][license-image]][license-url]
-> Convert CoffeeScript classes to [AngularJS](http://angularjs.org/) modules with [ng-classify](https://github.com/CaryLandholt/ng-classify)
+# [grunt](http://gruntjs.com/)-ng-classify
+[![License][license-image]][license-url]
+[![Version][version-image]][version-url]
+[![Build Status][build-image]][build-url]
+[![Dependency Status][dependencies-image]][dependencies-url]
+> Convert CoffeeScript classes to [AngularJS](http://angularjs.org/) modules with [ng-classify](https://github.com/CaryLandholt/ng-classify)  
+> Write less JavaScript. Write less CoffeeScript. Write less Angular.
 
 
-## Table of Contents
-* [Installing](#installing)
-* [Examples](#examples)
-	- [CoffeeScript](#coffeescript)
-	- [JavaScript](#javascript)
-* [API](#api)
-* [Contributing](#contributing)
-* [Changelog](#changelog)
-* [License](#license)
-
-
-## Installing
+## Install
 Install with [npm](https://npmjs.org/package/grunt-ng-classify)
 ```bash
-$ npm install --save-dev grunt-ng-classify
+$ npm install grunt-ng-classify
 ```
 
-## Examples
+
+## Usage
 
 
 ### CoffeeScript
@@ -67,12 +62,23 @@ module.exports = function (grunt) {
 ```
 
 
+## Table of Contents
+* [Install](#isntall)
+* [Usage](#examples)
+	- [CoffeeScript](#coffeescript)
+	- [JavaScript](#javascript)
+* [API](#api)
+* [Contributing](#contributing)
+* [Changelog](#changelog)
+* [License](#license)
+
+
 ## API
 See the [ng-classify docs](https://github.com/CaryLandholt/ng-classify)
 
 
 ### options
-Type: `Object`
+Type: `Object`  
 [ng-classify API](https://github.com/CaryLandholt/ng-classify#api)
 
 
