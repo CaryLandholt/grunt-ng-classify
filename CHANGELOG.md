@@ -1,3 +1,15 @@
+## 2.0.0 (2014-06-19)
+
+
+#### Breaking Changes
+
+* update to ng-classify 3.0.0
+
+See https://github.com/CaryLandholt/ng-classify/blob/master/CHANGELOG.md#300-2014-06-18
+
+ ([8c872f4c](https://github.com/CaryLandholt/grunt-ng-classify/commit/8c872f4c647d612157684322c657901b0d5e36ee))
+
+
 ## 1.0.0 (2014-06-14)
 
 
