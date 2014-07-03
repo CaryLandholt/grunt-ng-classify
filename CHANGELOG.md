@@ -1,3 +1,16 @@
+## 2.1.0 (2014-07-02)
+
+
+#### Bug Fixes
+
+* **package.json:** ensure semver compliance ([e428ce03](https://github.com/CaryLandholt/grunt-ng-classify/commit/e428ce036f0f95e414f768fd34a9fcab06cee237))
+
+
+#### Features
+
+* **optionsFunction:** options may be set dynamically via a function callback ([156c482d](https://github.com/CaryLandholt/grunt-ng-classify/commit/156c482d30319ca9229b2950f98a01262dcbfb7f))
+
+
 ## 2.0.0 (2014-06-19)
 
 
