@@ -13,8 +13,11 @@ module.exports = (grunt) ->
 				else
 					true
 			.map (filePath) ->
-				content  = grunt.file.read filePath
-				compiled = ngClassify content, options
+				content     = grunt.file.read filePath
+				hasCallback = !!options.callback
+				isFunction  = hasCallback and options.callback instanceof Function
+				opt         = if isFunction then options.callback(filePath) else options
+				compiled    = ngClassify content, opt
 
 				grunt.file.write filePair.dest, compiled
 				grunt.verbose.ok "#{filePath} -> #{filePair.dest}"

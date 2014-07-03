@@ -5,6 +5,8 @@
 [![Dependency Status][dependencies-image]][dependencies-url]
 > Convert CoffeeScript classes to [AngularJS](http://angularjs.org/) modules with [ng-classify](https://github.com/CaryLandholt/ng-classify)  
 > Write less JavaScript. Write less CoffeeScript. Write less Angular.
+>
+> Watch the [screencast](https://www.youtube.com/watch?v=28gUTu9vnB4)
 
 
 ## Install
@@ -78,9 +80,67 @@ See the [ng-classify docs](https://github.com/CaryLandholt/ng-classify)
 
 
 ### options
+*Optional*  
 Type: `Object`  
 Default:  `undefined`  
 see [ng-classify API](https://github.com/CaryLandholt/ng-classify#api)
+
+
+#### options.callback
+Type: `Function`  
+Default:  `undefined`  
+
+Dynamically creates options via the function callback.  The function takes in the filePath and returns the options.  *Note:  overrides other options*
+```coffee
+module.exports = (grunt) ->
+	grunt.loadNpmTasks 'grunt-ng-classify'
+
+	grunt.initConfig
+		ngClassify:
+			app:
+				files: [
+					cwd: 'src'
+					src: '**/*.coffee'
+					dest: 'dest'
+					expand: true
+				]
+				options:
+					callback: (filePath) ->
+						return if filePath.indexOf('administrator') isnt -1
+							{appName: 'admin'}
+
+						{appName: 'app'}
+```
+
+```javascript
+module.exports = function (grunt) {
+	grunt.loadNpmTasks('grunt-ng-classify');
+
+	grunt.initConfig({
+		ngClassify: {
+			app: {
+				files: [
+					{
+						cwd: 'src',
+						src: '**/*.coffee',
+						dest: 'dest',
+						expand: true
+					}
+				],
+				options: {
+					callback: function (filePath) {
+						if (filePath.indexOf('administrator') !== -1) {
+							return {appName: 'admin'};
+						}
+						
+						return {appName: 'app'};
+					}
+				}
+			}
+		}
+	});
+};
+```
 
 
 ## Contributing
