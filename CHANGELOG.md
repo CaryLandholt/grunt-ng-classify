@@ -1,3 +1,13 @@
+## 3.0.0 (2014-08-10)
+
+
+#### Features
+
+* **multipleApps:** add support for multiple apps ([f61fdb9b](https://github.com/CaryLandholt/grunt-ng-classify/commit/f61fdb9be5402be9777b0a2c6dd8ac11219404be))
+
+See https://github.com/CaryLandholt/ng-classify#multiple-apps
+
+
 ## 2.1.0 (2014-07-02)
 
 
