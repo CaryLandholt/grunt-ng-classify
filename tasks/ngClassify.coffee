@@ -1,12 +1,13 @@
 ngClassify = require 'ng-classify'
 
 litcoffeeToCoffee = (content) ->
+	r = /^( {4}|\t)/
 	content
 	.split("\n")
 	.filter (x) ->
-		x.match "^    "
+		x.match r
 	.map (x) ->
-		x.replace /^    /, ""
+		x.replace r, ""
 	.join "\n"
 
 module.exports = (grunt) ->
